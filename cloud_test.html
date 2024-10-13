@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /* 天空轮播 晴朗 阴 晴 */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .parent {
+                /* vh viewHeight 视口区域高度 vw  viewWidth 视口区域宽度 */
+                height: 100vh;
+                background-color: skyblue;
+                animation: sky 10s linear infinite;
+            }
+            
+            .cloud_one {
+                width: 300%;
+                height: 600px;
+                margin: 30px auto;
+                background: url(https://i.hd-r.cn/04462965ba09f768e47b6ea8cb065b1c.png) repeat-x;
+                position: fixed;
+                left: 0;
+                top: 0;
+                animation: cloud 20s linear infinite;
+            }
+            .cloud_two {
+                width: 300%;
+                height: 600px;
+                margin: 30px auto;
+                background: url(https://s3.bmp.ovh/imgs/2023/06/10/dc7235f6f0a978b5.png) repeat-x;
+                position: fixed;
+                left: 0;
+                top: 0;
+                animation: cloud 40s linear infinite;
+            }
+            .cloud_three {
+                width: 300%;
+                height: 600px;
+                margin: 30px auto;
+                background: url(https://s3.bmp.ovh/imgs/2023/06/10/8201e7f468f3570c.png) repeat-x;
+                position: fixed;
+                left: 0;
+                top: 0;
+                animation: cloud 60s linear infinite;
+            }
+            @keyframes cloud {
+                from {
+                    left: 0;
+                }
+                to {
+                    left: -200%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="cloud_one"></div>
+            <div class="cloud_two"></div>
+            <div class="cloud_three"></div>
+        </div>
+    </body>
+</html>
